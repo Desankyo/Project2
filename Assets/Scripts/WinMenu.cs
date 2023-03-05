@@ -6,14 +6,14 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     // Start is called before the first frame update
-    public void PlayGame ()
+    public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene());
+        SceneManager.LoadScene(SceneManager.GetActiveScene().Level1);
     }
 
-public void QuitGame ()
-{
-    Debug.Log("Quit!");
-    Application.Quit();
-}
+    public void QuitGame()
+    {
+        Debug.Log("Quit!");
+        Application.Quit();
+    }
 }
